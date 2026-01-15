@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player - By AR</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+   
+  <!-- LEFT: Player -->
+  <div class="player-side">
+
+    <div class="album-art">
+      <img id="cover" src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=500" alt="Album">
+    </div>
+
+    <div class="song-info">
+      <h2 class="song-title" id="title">Select a song</h2>
+      <p class="artist" id="artist">—</p>
+    </div>
+
+    <div class="progress-container">
+
+      <div class="progress-bar" id="progressBar">
+        <div class="progress" id="progress"></div>
+      </div>
+      
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+    </div>
+
+   <div class="controls">
+      <button class="btn" id="prev"><i class="fas fa-step-backward"></i></button>
+      <button class="btn play-pause" id="play"><i class="fas fa-play"></i></button>
+      <button class="btn" id="next"><i class="fas fa-step-forward"></i></button>
+   </div>
+
+   <div class="volume-container">
+      <i class="fas fa-volume-up" id="volumeIcon" style="cursor: pointer; width: 24px;"></i>
+      <div class="volume-bar" id="volumeBar">
+         <div class="volume-progress" id="volumeProgress"></div>
+      </div>
+   </div>
+</div>
+
+  <!-- RIGHT: Playlist -->
+  <div class="playlist-side">
+    <h3>Playlist</h3>
+    <div class="playlist" id="playlist">
+      <!-- Songs inserted here -->
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
